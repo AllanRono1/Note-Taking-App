@@ -29,3 +29,13 @@ button {
     font-weight: 500;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    margin-bottom: 5px;
+}
+
