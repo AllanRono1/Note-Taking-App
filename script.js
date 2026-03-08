@@ -14,7 +14,11 @@ saveEl.addEventListener("click", function(){
 function render() {
     let list = ""
     for(let i = 0; i < myLeads.length; i++) {
-        list += `<li><a href="#">${myLeads[i]}</a></li>`
+        list += `
+        <li>
+        <a href="#">${myLeads[i]}</a>
+        </li>
+        `
     }
     inputList.innerHTML = list
 }
