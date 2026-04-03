@@ -4,6 +4,7 @@ const saveEl = document.getElementById("save-el")
 const inputEl = document.getElementById("input-el")
 const inputList = document.getElementById("list-items")
 const storageValues = JSON.parse(localStorage.getItem("myLeads"))
+
 if(storageValues) {
     render()
 }
@@ -26,13 +27,27 @@ function render() {
             <a href="#">${myLeads[i]}</a>
         </div>
         <div>
-            <button class="edit" title="delete">📝</button>
-            <button class="edit clear" title="delete">❌</button>
+            <button class="edit" title="edit">📝</button>
             <button class="edit delete" title="done">✅</button>
+            <button id="delete-holder"></button>
         </div>
         </div>
         </li>
         `
     }
     inputList.innerHTML = list
+}
+
+function deleteNote() {
+    const deleteBtn = document.createElement("button")
+    deleteBtn.id = "delete"
+    deleteBtn.classList.add("edit-clear")
+    deleteBtn.title = "delete"
+    deleteBtn.textContent = "❌"
+
+    return deleteBtn
+}
+
+function editButton() {
+    
 }
