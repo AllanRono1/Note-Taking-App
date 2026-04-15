@@ -29,7 +29,7 @@ function render() {
         <div>
             <button class="edit" title="edit">📝</button>
             <button class="edit delete" title="done">✅</button>
-            <button id="delete-holder"></button>
+            <button id="delete-holder">❌</button>
         </div>
         </div>
         </li>
