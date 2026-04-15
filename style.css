@@ -18,14 +18,13 @@ input {
 }
 
 .saveButton {
-    border: 2px solid rebeccapurple;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 4px;
+    padding: 10px 20px;
     margin: 20px auto;
-    background-color: #2C2C2C;
-    color: whitesmoke;
-    font-size: 120%;
-    font-weight: 500;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-size: 100%;
+    font-family: "inter", sans-serif;
 }
 
 ul {
